@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | EduTrack</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5rem 2rem;
+      min-height: 70vh;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    .about-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .boxed {
+      background-color: white;
+      padding: 2rem 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .boxed h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+    }
+
+    .boxed p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .boxed strong {
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body class="about-bg">
+  <header>
+    <nav class="navbar">
+      <div class="logo">EduTrack</div>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="student.html">Student Records</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-section" id="aboutSection">
+    <div class="boxed">
+      <h1>About EduTrack</h1>
+      <p><strong>EduTrack</strong> is a web-based platform designed to simplify student record keeping. It helps users to create, manage, and analyze student data effectively using built-in features like search, sort, course statistics, and dynamic UI updates.</p>
+      <p>Developed using HTML, CSS, and JavaScript with LocalStorage, EduTrack is a professional-level academic tool that blends design, functionality, and interactivity for the modern educator.</p>
+    </div>
+  </section>
+
+  <!-- Shared JS -->
+  <script src="script.js"></script>
+  <!-- Fade-in animation -->
+  <script>
+    window.addEventListener("load", function () {
+      document.getElementById("aboutSection").classList.add("visible");
+    });
+  </script>
+</body>
+</html>
