@@ -61,7 +61,7 @@ This app is fully mobile-friendly:
 ## 📌 Credits
 
 Developed by **Akrit Kumar**  
-Using guidance and collaboration with **ChatGPT**
+
 
 ---
 
